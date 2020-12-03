@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CardGameServer:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CardGameServer</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CardGameServer-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="CardGameServer:war exploded" />
+    </root>
+  </artifact>
+</component>
