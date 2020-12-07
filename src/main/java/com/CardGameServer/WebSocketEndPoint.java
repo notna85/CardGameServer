@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @ServerEndpoint("/ws")
-public class ServerController {
+public class WebSocketEndPoint {
 
     private Map<String, String> usernames = new HashMap<String, String>();
 
