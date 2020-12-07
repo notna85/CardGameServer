@@ -7,13 +7,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 @ServerEndpoint("/ws")
-public class SkitGubbe {
+public class ServerController {
+
     private Map<String, String> usernames = new HashMap<String, String>();
 
     @OnOpen
     public void open(Session session) throws IOException, EncodeException {
         session.getBasicRemote().sendText("(Server): Welcome to the chat room. Please state your username to begin.");
     }
+
 
     @OnClose
     public void close(Session session) throws IOException, EncodeException {
