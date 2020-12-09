@@ -18,6 +18,8 @@ public class Player {
     public void setPlayerID(String playerID) {
         this.playerID = playerID;
     }
+
+    //Constructor
     public Player(String playerName, String playerID) {
         this.playerName = playerName;
         this.playerID = playerID;
