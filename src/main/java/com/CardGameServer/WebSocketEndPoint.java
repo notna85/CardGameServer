@@ -14,16 +14,11 @@ public class WebSocketEndPoint {
 
     @OnOpen
     public void open(Session session) throws IOException, EncodeException {
-
-
         //session.getBasicRemote().sendText("(Server): Welcome to the chat room. Please state your username to begin.");
-
     }
-
 
     @OnClose
     public void close(Session session) throws IOException, EncodeException {
-
         /*String userId = session.getId();
         if (usernames.containsKey(userId)) {
             String username = usernames.get(userId);
@@ -31,16 +26,15 @@ public class WebSocketEndPoint {
             for (Session peer : session.getOpenSessions())
                 peer.getBasicRemote().sendText("(Server): " + username + " left the chat room.");
         }*/
-
     }
 
     @OnMessage
     public void handleMessage(String message, Session session) throws IOException, EncodeException {
-        String Success;
-        Success = lobby.handleMessage(session.getId(), message);
+
+        String receivedMessage = lobby.handleMessage(session.getId(), message);
 
         //Code used to simulate feedback messages to client
-        if(Success.equals("True")){
+        if(receivedMessage.equals("True")){
             session.getBasicRemote().sendText("Room created!");
             for (Session peer : session.getOpenSessions())
                 for(Room room : RoomHandler.rooms)

@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class RoomHandler {
     static ArrayList<Room> rooms = new ArrayList<>();
 
-
     public boolean addNewRoom(String roomName){
         RoomFactory roomFactory = new RoomFactory();
 
