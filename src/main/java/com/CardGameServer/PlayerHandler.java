@@ -4,9 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PlayerHandler {
-    List<Player> unassignedPlayers = new ArrayList<>();
 
     public void createPlayer(){
+
+    }
+    public void checkUserName(String userName){
 
     }
 }

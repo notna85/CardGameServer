@@ -6,8 +6,8 @@ import java.util.List;
 public class RoomHandler {
     List<Room> roomes = new ArrayList<Room>();
 
-    public Room addNewRoom(String roomName){
-        Room room = new Room(roomName);
+    public Room addNewRoom(String roomName, Player player){
+        Room room = new Room(roomName, player);
 
         return room;
     }
