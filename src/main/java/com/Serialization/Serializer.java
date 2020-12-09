@@ -1,8 +1,8 @@
-package com.CardGameServer;
+package com.Serialization;
 
 import java.io.IOException;
 
 public interface Serializer {
     String serialize(Message message) throws IOException;
-    Message deSerialize(String serualizedMessage) throws IOException;
+    Message deSerialize(String serializedMessage) throws IOException;
 }

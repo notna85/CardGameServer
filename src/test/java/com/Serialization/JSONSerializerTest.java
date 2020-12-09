@@ -1,15 +1,15 @@
-package com.CardGameServer;
+package com.Serialization;
 
+import com.Serialization.Command;
+import com.Serialization.JSONSerializer;
+import com.Serialization.Message;
 import org.junit.Assert;
-import org.junit.experimental.theories.DataPoint;
 import org.junit.experimental.theories.Theories;
-import org.junit.experimental.theories.Theory;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 
 import java.io.IOException;
 
-import static org.junit.jupiter.api.Assertions.*;
 @RunWith(Theories.class)
 class JSONSerializerTest {
 

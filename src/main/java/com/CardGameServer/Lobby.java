@@ -3,6 +3,8 @@ package com.CardGameServer;
 import com.Serialization.Message;
 import com.Serialization.SerializationHandler;
 
+import java.io.IOException;
+
 public class Lobby {
 
     public void addNewPlayer(String playerID){
@@ -13,18 +15,19 @@ public class Lobby {
         return roomHandler.addNewRoom(roomName);
     }
 
-    public String handleMessage(String playerID, String message){
-        //SerializationHandler serializeHandler = new SerializationHandler();
-        //serializeHandler.deformatMessage(playerID, message);
-        Message messageOBJ = new Message();
+    public String handleMessage(String playerID, String message) throws IOException {
+        SerializationHandler serializeHandler = new SerializationHandler();
 
-        switch(messageOBJ.getRoomName()){
+        Message messageOBJ = serializeHandler.deformatMessage(playerID, message);
+
+        switch(messageOBJ.getCommand()){
             case "CreateRoom":
                 if(addNewRoom(messageOBJ.getRoomName()))
                     return "True";
             default:
                 return "False";
-        }
+        }*/
+        return "False";
     }
     public void addPlayerToRoom(String playerID, String roomName){
 
