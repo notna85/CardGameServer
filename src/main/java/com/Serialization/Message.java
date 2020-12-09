@@ -1,10 +1,6 @@
 package com.Serialization;
 
 
-enum Command {
-    CreateRoom
-}
-
 public class Message {
     public Command getCommand() {
         return command;

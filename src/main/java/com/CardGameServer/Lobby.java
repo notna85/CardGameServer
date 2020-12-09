@@ -1,12 +1,12 @@
 package com.CardGameServer;
-
-
 import com.Serialization.Command;
 import com.Serialization.Message;
 import com.Serialization.Message.*;
 import com.Serialization.SerializationHandler;
 
 import java.io.IOException;
+
+import static com.Serialization.Command.CreateRoom;
 
 public class Lobby {
 
@@ -27,13 +27,12 @@ public class Lobby {
         Command cm = m.getCommand();
 
         switch(messageOBJ.getCommand()){
-            case "CreateRoom":
+            case CreateRoom:
                 if(addNewRoom(messageOBJ.getRoomName()))
                     return "True";
             default:
                 return "False";
         }
-        return "False";
     }
     public void addPlayerToRoom(String playerID, String roomName){
 
