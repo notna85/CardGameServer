@@ -13,7 +13,6 @@ public class WebSocketEndPoint {
 
     @OnOpen
     public void open(Session session) throws IOException, EncodeException {
-        session.getBasicRemote().sendText("(Server): Welcome to the chat room. Please state your username to begin.");
     }
 
 
