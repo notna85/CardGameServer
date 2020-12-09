@@ -13,6 +13,13 @@
         <element id="directory" name="classes">
           <element id="module-output" name="CardGameServer" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.7.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.7.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.7.0" />
+          <element id="library" level="project" name="Maven: javax.json:javax.json-api:1.1" />
+          <element id="library" level="project" name="Maven: org.glassfish:javax.json:1.1" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/CardGameServer-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />

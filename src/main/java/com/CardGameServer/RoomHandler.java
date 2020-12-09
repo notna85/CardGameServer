@@ -12,7 +12,6 @@ public class RoomHandler {
         return room;
     }
     public void verifyRoomName(String roomName){
-
     }
     public void setRoomOwner(Player player, Room room ){
 
