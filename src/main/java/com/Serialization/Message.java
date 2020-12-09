@@ -1,5 +1,6 @@
 package com.Serialization;
 
+
 enum Command {
     CreateRoom
 }
@@ -14,9 +15,12 @@ public class Message {
     public String getPlayerID() {
         return playerID;
     }
+    EnumClass ec = new EnumClass();
+
 
     private Command command;
     private String roomName;
+
 
     public void setPlayerID(String playerID) {
         this.playerID = playerID;
@@ -28,6 +32,7 @@ public class Message {
         this.command = command;
         this.roomName = roomName;
         this.playerID = playerID;
+
     }
     public Message() {
 
