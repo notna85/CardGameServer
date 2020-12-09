@@ -9,4 +9,7 @@ public class Room {
     private Player roomOwner;
 
 
+    public Room(String roomName) {
+        this.roomName = roomName;
+    }
 }
