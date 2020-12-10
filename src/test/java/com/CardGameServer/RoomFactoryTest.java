@@ -10,11 +10,11 @@ class RoomFactoryTest extends WebSocketEndPoint {
     Player player = new Player("Jens", "100" );
     @Test
     Room createRoom2() {
-       Room room = roomFac.createRoom("ting", player);
+       Room room = roomFac.createRoom("ting");
        return room;
     }
     @Test
     void createRoom3() {
-        roomFac.createRoom("ting", player);
+        roomFac.createRoom("ting");
     }
 }
