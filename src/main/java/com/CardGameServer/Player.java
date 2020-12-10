@@ -12,6 +12,7 @@ public class Player {
     public String getPlayerID() {
         return playerID;
     }
+
     public void setPlayerName(String playerName) {
         this.playerName = playerName;
     }
@@ -21,8 +22,8 @@ public class Player {
 
     //Constructor
     public Player(String playerName, String playerID) {
-        this.playerName = playerName;
-        this.playerID = playerID;
+        setPlayerName(playerName);
+        setPlayerID(playerID);
     }
 
 

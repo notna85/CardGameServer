@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class RoomFactoryTest extends ServerController {
+class RoomFactoryTest extends WebSocketEndPoint {
 
     RoomFactory roomFac = new RoomFactory();
     Player player = new Player("Jens", "100" );
