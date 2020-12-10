@@ -23,7 +23,7 @@ public class Lobby {
                 return "False";
         }
     }
-
+    //
     public boolean addNewPlayer(String playerID, String playerName){
         PlayerHandler playerHandler = new PlayerHandler();
         return playerHandler.addNewPlayer(playerID, playerName);
