@@ -1,9 +1,11 @@
 package com.CardGameServer;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class RoomHandler {
-    static ArrayList<Room> rooms = new ArrayList<>();
+    //Arraylist |OLD|
+    static List<Room> rooms = new ArrayList<>();
 
     public boolean addNewRoom(String roomName){
         RoomFactory roomFactory = new RoomFactory();
@@ -26,5 +28,9 @@ public class RoomHandler {
 
     public void setRoomOwner(Player player, Room room ){
 
+    }
+    //Returns all rooms
+    public List<Room> returnLobby(){
+        return rooms;
     }
 }

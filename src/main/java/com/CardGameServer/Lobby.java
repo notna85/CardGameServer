@@ -4,8 +4,11 @@ import com.Serialization.Message;
 import com.Serialization.SerializationHandler;
 
 import java.io.IOException;
+import java.util.List;
 
 public class Lobby {
+
+    RoomHandler roomHandler = new RoomHandler();
 
     public String handleMessage(String playerID, String message) throws IOException {
         SerializationHandler serializeHandler = new SerializationHandler();
@@ -30,7 +33,6 @@ public class Lobby {
     }
 
     public boolean addNewRoom(String roomName){
-        RoomHandler roomHandler = new RoomHandler();
         return roomHandler.addNewRoom(roomName);
     }
 
@@ -39,5 +41,8 @@ public class Lobby {
     }
     public void assignOwnerToRoom(String playerID, String roomName){
 
+    }
+    public void refreshLobby(){
+        List<Room> rooms = roomHandler.returnLobby();
     }
 }
