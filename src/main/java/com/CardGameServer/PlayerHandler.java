@@ -1,9 +1,10 @@
 package com.CardGameServer;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class PlayerHandler {
-    static ArrayList<Player> unassignedPlayers = new ArrayList<>();
+    static List<Player> unassignedPlayers = new ArrayList<>();
 
     public boolean addNewPlayer(String playerID, String playerName){
 
@@ -22,5 +23,13 @@ public class PlayerHandler {
                 return false;
         }
         return true;
+    }
+
+    public Player getPlayerByID(String playerID) {
+        for(Player player : unassignedPlayers){
+            if(player.getPlayerID().equals(playerID))
+                return player;
         }
+        return null;
+    }
 }

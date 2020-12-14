@@ -22,6 +22,9 @@ public class Lobby {
             case CreatePlayer:
                 if(addNewPlayer(playerID, messageOBJ.getPlayerName()))
                     return "True";
+            case JoinRoom:
+                addPlayerToRoom(playerID, messageOBJ.getRoomName());
+                return "True";
             default:
                 return "False";
         }
@@ -37,6 +40,15 @@ public class Lobby {
     }
 
     public void addPlayerToRoom(String playerID, String roomName){
+        PlayerHandler playerHandler = new PlayerHandler();
+        Player playerToAdd = playerHandler.getPlayerByID(playerID);
+        if(playerToAdd != null){
+            for(Room room : RoomHandler.rooms){
+                if(room.getRoomName().equals(roomName)){
+                    room.getPlayers().add(playerToAdd);
+                }
+            }
+        }
 
     }
     public void assignOwnerToRoom(String playerID, String roomName){

@@ -1,11 +1,12 @@
 package com.CardGameServer;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Room {
 
     private String roomName;
-    private ArrayList<Player> players = new ArrayList<>();
+    private List<Player> players = new ArrayList<>();
     private Player roomOwner;
 
     public String getRoomName() {
@@ -15,10 +16,10 @@ public class Room {
         this.roomName = roomName;
     }
 
-    public ArrayList<Player> getPlayers() {
+    public List<Player> getPlayers() {
         return players;
     }
-    public void setPlayers(ArrayList<Player> players) {
+    public void setPlayers(List<Player> players) {
         this.players = players;
     }
 
