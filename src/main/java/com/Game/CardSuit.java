@@ -1,4 +1,4 @@
-package Game;
+package com.Game;
 
 public enum CardSuit {
     Hearts,

@@ -1,8 +1,7 @@
-package Game;
+package com.Game;
 
 import com.CardGameServer.Player;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface CardPlayable {
