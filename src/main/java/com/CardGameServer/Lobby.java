@@ -46,6 +46,7 @@ public class Lobby {
             for(Room room : RoomHandler.rooms){
                 if(room.getRoomName().equals(roomName)){
                     room.getPlayers().add(playerToAdd);
+                    break;
                 }
             }
         }

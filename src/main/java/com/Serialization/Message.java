@@ -1,6 +1,8 @@
 package com.Serialization;
 
 
+import com.Command.Command;
+
 public class Message {
 
     public Command getCommand() { return command; }

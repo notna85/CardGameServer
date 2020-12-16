@@ -1,8 +1,6 @@
 package com.Serialization;
 
-import com.Serialization.Command;
-import com.Serialization.JSONSerializer;
-import com.Serialization.Message;
+import com.Command.Command;
 import org.junit.Assert;
 import org.junit.experimental.theories.Theories;
 import org.junit.jupiter.api.Test;

@@ -1,18 +1,18 @@
 package com.Game;
 
+import com.CardGameServer.Player;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class CardGame implements Playable{
-    List<Card> deck;
-    CardFactory cardFactory;
+    Deck deck;
+    DeckFactory deckFactory;
 
-    public void getCards(){
-
+    void getDeck(boolean shuffled){
+        deck = deckFactory.getDeck(shuffled);
     }
-    public void shuffleCards(){
-
-    }
-    public void dealCards(){
+    void dealCards(ArrayList<Player> players){
 
     }
 }

@@ -1,19 +1,22 @@
 package com.Game;
 
+import com.CardGameServer.Player;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class SkitGubbeGame extends CardGame{
 
-    List<Card> cardPile;
-    List<SkitGubbePlayerCards> playerCards;
+    ArrayList<Card> cardPile;
+    ArrayList<SkitGubbePlayerCards> playerCards;
 
     @Override
-    public void startGame() {
+    public void start() {
 
     }
 
     @Override
-    public void dealCards(){
+    void dealCards(ArrayList<Player> players){
 
     }
 }

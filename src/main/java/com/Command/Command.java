@@ -1,7 +1,8 @@
-package com.Serialization;
+package com.Command;
 
 public enum Command {
     CreateRoom,
     CreatePlayer,
-    JoinRoom
+    JoinRoom,
+    RefreshLobby
 }
