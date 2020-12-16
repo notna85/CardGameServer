@@ -24,7 +24,6 @@ public class Message {
         this.roomName = roomName;
         this.playerID = playerID;
     }
-
     public Message() {
     }
 }
