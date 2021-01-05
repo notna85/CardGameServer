@@ -1,4 +1,4 @@
-package com.Game;
+package com.Cardfactory;
 
 public class Card {
 

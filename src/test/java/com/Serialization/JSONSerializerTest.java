@@ -1,6 +1,6 @@
 package com.Serialization;
 
-import com.Command.Command;
+import com.CommandFactory.Command;
 import org.junit.Assert;
 import org.junit.experimental.theories.Theories;
 import org.junit.jupiter.api.Test;

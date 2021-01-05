@@ -1,7 +1,7 @@
 package com.Serialization;
 
 
-import com.Command.Command;
+import com.CommandFactory.Command;
 
 public class Message {
 

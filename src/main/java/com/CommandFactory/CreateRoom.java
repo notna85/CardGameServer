@@ -1,4 +1,4 @@
-package com.Command;
+package com.CommandFactory;
 
 public class CreateRoom {
 

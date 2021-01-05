@@ -1,7 +1,8 @@
-package com.Game;
+package com.DeckFactory;
+
+import com.Cardfactory.Card;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Deck {
     ArrayList<Card> deck;

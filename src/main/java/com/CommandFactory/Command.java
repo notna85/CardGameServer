@@ -1,4 +1,4 @@
-package com.Command;
+package com.CommandFactory;
 
 public enum Command {
     CreateRoom,

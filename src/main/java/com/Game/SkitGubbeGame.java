@@ -1,9 +1,9 @@
 package com.Game;
 
 import com.CardGameServer.Player;
+import com.Cardfactory.Card;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class SkitGubbeGame extends CardGame{
 
